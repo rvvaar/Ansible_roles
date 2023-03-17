@@ -10,7 +10,7 @@
     dest: "{{ deployment_path }}"
     version: "{{ git_branch }}"
 
-- Name: docker-compose
+- name: docker-compose
   docker_compose:
     project_src: "{{ deployment_path }}"
     build: yes
